@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "turbo run dev --parallel",
     "build": "turbo run build",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo run build --filter=packages/docs && changeset publish"
+    "release": "turbo run build --filter=!docs && changeset publish"
   },
   "keywords": [],
   "author": "",
